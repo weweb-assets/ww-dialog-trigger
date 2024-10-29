@@ -19,16 +19,7 @@ export default {
         },
     },
     states: ['focus', 'disabled'],
-    triggerEvents: [
-        {
-            name: 'change',
-            label: {
-                en: 'On value change',
-                fr: 'Changement de valeur',
-            },
-            event: null,
-        },
-    ],
+    triggerEvents: [],
     properties: {
         clickOpens: {
             type: 'OnOff',
@@ -46,6 +37,11 @@ export default {
                     'You can disable the whole trigger to open the Dialog. For example, if you want to open it with a smaller icon or button inside the trigger.',
             },
             /* wwEditor:end */
+        },
+
+        children: {
+            hidden: true,
+            defaultValue: [],
         },
     },
 };
